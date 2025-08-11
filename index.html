@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carros Matriz</title>
+    <title>Logistica Matriz</title>
 </head>
 <body>
         <script>
   const automoveis = {
   carros: [
-    {name:"Van", models:["Curitiba", "Ibaiti", "296 Km", "3 Dias","469 R$"]},
-    {name:"Caminhão", models:["São paulo", "Londrina", "536 Km", "4 Dias","1.956 R$"]},
-    {name:"Van", models:["Curiuva", "Jacarézinho", "145 Km", "1 Dia","146 R$"]}
+    {name:"Van", models:["Curitiba", "Ibaiti", "296 Km", "3 Dias","469 R$", "Carlos Eduardo", "Paraná", "Rua Azevedo", "Bairro Esquisito"]},
+    {name:"Caminhão", models:["São paulo", "Londrina", "536 Km", "4 Dias","1.956 R$", "Lucas Enzo", "São Paulo", "Rua Brasilia", "Bairro Escuro"]},
+    {name:"Van", models:["Curiuva", "Jacarézinho", "145 Km", "1 Dia","146 R$", "Gabriel", "Paraná", "Rua Moreira", "Bairro Terezinha"]}
   ]
 
 }            
@@ -43,6 +43,22 @@
 
                document.write("<td colspan=1>");
                     document.write("Custo: "); 
+               document.write("</td>");
+
+            document.write("<td colspan=1>");
+                    document.write("Responsavel: "); 
+               document.write("</td>");
+
+            document.write("<td colspan=1>");
+                    document.write("Estado: "); 
+               document.write("</td>");
+
+             document.write("<td colspan=1>");
+                    document.write("Rua: "); 
+               document.write("</td>");
+
+             document.write("<td colspan=1>");
+                    document.write("Bairro: "); 
                document.write("</td>");
             document.write("</tr>");  
 
@@ -83,3 +99,4 @@ exibe();
 
 </body>
 </html>
+
