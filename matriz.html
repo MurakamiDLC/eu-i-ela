@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros Matriz</title>
+</head>
+<body>
+        <script>
+  const automoveis = {
+  carros: [
+    {name:"Luis", models:["Agro", "Tarde", "Matematica", "3 Trimeste","2.7"]},
+    {name:"Stephany", models:["DS", "Manha", "Portugues", "3 Trimeste","9.7"]},
+    {name:"Lucas", models:["DS", "Manha", "Ingles", "3 Trimeste","7.4"]}
+  ]
+
+}            
+
+        function exibe(){
+            let x = "";
+        document.write("<table border=1>");
+
+            document.write("<tr>");    
+               document.write("<td>");
+                    document.write("Aluno: "); 
+               document.write("</td>");  
+               
+               document.write("<td colspan=1>");
+                    document.write("Curso: "); 
+               document.write("</td>");  
+
+               document.write("<td colspan=1>");
+                    document.write("Turno: "); 
+               document.write("</td>"); 
+
+               document.write("<td colspan=1>");
+                    document.write("Matéria: "); 
+               document.write("</td>"); 
+
+               document.write("<td colspan=1>");
+                    document.write("Trimestre: "); 
+               document.write("</td>");
+
+               document.write("<td colspan=1>");
+                    document.write("Notas: "); 
+               document.write("</td>");
+            document.write("</tr>");  
+
+            for(let i in automoveis.carros){
+
+                // x++;
+            document.write("<tr>");    
+               document.write("<td>");
+                    document.write(automoveis.carros[i].name); 
+               document.write("</td>");  
+               
+               for(let j in automoveis.carros[i].models){
+               document.write("<td>");
+                    document.write(automoveis.carros[i].models[j]); 
+               document.write("</td>");  
+
+            
+               }  
+               document.write("</tr>");
+            }    
+        
+        
+            for(let g in automoveis.pneus){
+                document.write("<tr>");    
+               document.write("<td>");
+                    document.write(automoveis.pneus[g].name); 
+               document.write("</td>"); 
+            
+            }
+            document.write("</table>");    
+
+
+        }        
+
+exibe();
+        </script>
+
+
+</body>
+</html>
